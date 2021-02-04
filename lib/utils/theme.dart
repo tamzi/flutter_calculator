@@ -73,8 +73,8 @@ class _CalcFontStyles {
       fontSize: 55.0,
       height: 1.1236,
       letterSpacing: -0.3,
-      fontWeight: FontWeight.w700,
-      fontFamily: 'DMSans',
+      fontWeight: FontWeight.w300,
+      fontFamily: 'Gilroy',
       color: _CalcThemeColors.coal);
 
   /// font2 will be the calculator buttons
