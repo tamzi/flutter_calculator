@@ -79,7 +79,7 @@ class _CalcFontStyles {
 
   /// font2 will be the calculator buttons
   static const TextStyle font2 = TextStyle(
-      fontSize: 33.0,
+      fontSize: 30.0,
       height: 1.2,
       letterSpacing: -0.3,
       fontWeight: FontWeight.w500,

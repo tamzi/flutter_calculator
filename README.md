@@ -5,7 +5,8 @@
   <h3 align="center">Calculator Theme Application</h3>
 
   <p align="center">
-    A Calculator App done isn flutter using based on <a href="https://youtu.be/0Bn0Sp2ALMA?t=130">my talk on design systems that you can click to watch here</a>.
+    A Calculator App done isnt flutter using based on <a href="https://youtu.be/0Bn0Sp2ALMA?t=130">my talk on design systems that you can click to watch here</a>.
+    Using flow to make it abit more robust
     <br>
      <img src="https://img.shields.io/badge/dart-coded%20in%20dart-blue" alt="built with dart">
     <br>

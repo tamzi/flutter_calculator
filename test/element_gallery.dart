@@ -87,22 +87,50 @@ class TextGallery extends StatelessWidget {
 class ButtonGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final themeData = CalcTheme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Calculator Buttons"),
+        backgroundColor: themeData.colors.ashGrey,
+        title: Text("Calculator Buttons", style: themeData.coalTextTheme.font3),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(60.0),
+          padding: EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              NumbersButton(label: "Primary Button", onPressed: () {}),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  NumbersButton(
+                      label: "0",
+                      onPressed: () {
+                        print("Pressed 0");
+                      }),
+                  NumbersButton(label: "1", onPressed: () {}),
+                  NumbersButton(label: "2", onPressed: () {}),
+                  NumbersButton(label: "3", onPressed: () {}),
+                ],
+              ),
               Divider(),
-              ResetButton(label: "Secondary Button", onPressed: () {}),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ResetButton(label: "AC", onPressed: () {}),
+                  ResetButton(label: "CE", onPressed: () {}),
+                ],
+              ),
               Divider(),
-              OperationsButton(label: "Primary Button Disabled"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  OperationsButton(label: "+", onPressed: () {}),
+                  OperationsButton(label: "-", onPressed: () {}),
+                  OperationsButton(label: "x", onPressed: () {}),
+                  OperationsButton(label: "/", onPressed: () {}),
+                ],
+              ),
               Divider(),
             ],
           ),

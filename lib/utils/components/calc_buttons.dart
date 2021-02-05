@@ -39,7 +39,7 @@ class NumbersButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeData = CalcTheme.of(context);
-    final buttonThemeData = themeData.operationsBtnThemeData;
+    final buttonThemeData = themeData.numberBtnThemeData;
     return _ButtonBuilder(
       color: buttonThemeData.backgroundColor,
       labelStyle: buttonThemeData.labelStyle,
